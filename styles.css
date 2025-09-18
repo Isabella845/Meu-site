@@ -1,0 +1,73 @@
+:root {
+    --marrom: #6F4E37;
+    --bege: #F3E5AB;
+    --alto-contraste-fundo: #000;
+    --alto-contraste-texto: #fff;
+    --alto-contraste-link: #FFD700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: var(--bege);
+}
+
+header {
+    background-color: var(--marrom);
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--marrom);
+    border: none;
+}
+
+h2 {
+    color: var(--marrom);
+    font-weight: bold;
+}
+
+.formulario {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+.apresenta-lista {
+    display: none;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+}
+
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
+}
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: black;
+}
